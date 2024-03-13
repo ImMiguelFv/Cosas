@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Galería de Fotos</title>
+</head>
+<body>
+    <header id="sticky-header" class="header">
+        <!-- Encabezado fijo que se mantendrá en la parte superior -->
+        <div class="header-container">
+            <h1 class="header-title">*Artista POR DEFINIR*</h1>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a href="contacto.html">Sobre mi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="inicio">
+        <h2>Bienvenido a mi galería de arte online</h2>
+        <p>En ella encontrarás mis obras de pintura,fotografia y un largo sin fin de mis trabajos.</p>
+    </section>
+
+    <div class="carousel-container">
+        <div id="prevBtn" class="carousel-button">◄</div>
+        <div class="carousel-wrapper">
+            <div class="carousel-slide">
+                <img src="obras/897251.jpg" alt="Imagen 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagenes/imagen2.jpg" alt="Imagen 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="obras/pato4.jpg" alt="Imagen 3">
+            </div>
+            <div class="carousel-slide">
+                <img src="obras/EwsXO3SXIAkt-t_.jpg" alt="Imagen 4">
+            </div>
+            <div class="carousel-slide">
+                <img src="obras/tokyo-ghoul-kaneki-widescreen-desktop-wallpaper-preview.jpg" alt="Imagen 5">
+            </div>
+        </div>
+        <div id="nextBtn" class="carousel-button">►</div>
+    </div>
+    
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    
+    <footer class="footer-contacto">
+        <p>&copy; 2023 Proximamente</p>
+        <p>Desarrollada por Miguel Ángel Ferrón Viñuela</p>
+    </footer>
+
+    <script src="Js/script.js"></script>
+</body>
+</html>

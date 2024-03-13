@@ -1,0 +1,179 @@
+/* Definición de la fuente personalizada */
+@font-face {
+  font-family: "like"; /* Nombre de la fuente personalizada */
+  src: url(/Fonts/widges/Widges-Demo.ttf); /* Ruta de la fuente */
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+  margin: 0; /* Elimina el margen superior e inferior */
+  padding: 0; /* Elimina el padding del contenido */
+  background-color: #111110; /* Color de fondo del cuerpo del documento */
+  /* Utilizado para ajustar los footers siempre abajo */
+  display: grid;
+  flex-direction: column;
+  min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% del viewport */
+  grid-template-rows: auto 1fr auto; /* Configura las filas del grid */
+}
+
+/* Estilos de la sección de Proyectos */
+.Proyectos {
+  max-width: 80%; /* Ancho máximo del contenedor */
+  width: 60%; /* Ancho del contenedor */
+  margin: 2% auto; /* Margen superior e inferior del contenedor */
+  padding: 5%; /* Relleno interno del contenedor */
+  color: #ccf381; /* Color del texto */
+  border-radius: 15px; /* Borde redondeado del contenedor */
+  text-align: center; /* Alineación del texto */
+  background: #333; /* Color de fondo del contenedor */
+  width: auto; /* ¿Este 'width: auto;' es necesario aquí? */
+}
+
+.Proyectos h1,
+.Proyectos h2 {
+  font-family: "like"; /* Fuente para títulos dentro de Proyectos */
+  font-size: 1.5rem; /* Tamaño de fuente para títulos */
+}
+
+.Proyectos p {
+  font-size: 1.2rem; /* Tamaño de fuente para párrafos */
+  font-family: 'Titillium Web', sans-serif; /* Fuente para párrafos */
+}
+
+/* Estilos de la sección de Proyectos específicamente */
+.proyecto-container {
+  display: flex; /* Establece el contenedor como flexible */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+  justify-content: center; /* Centra la columna */
+}
+
+.proyecto {
+  margin: 0 10px 20px; /* Margen superior, derecho e inferior del proyecto */
+  box-sizing: border-box; /* Incluye padding en el ancho */
+  text-align: center; /* Alineación del texto en el proyecto */
+  padding: 15px; /* Relleno interno del proyecto */
+}
+
+.texto {
+  text-align: center; /* Alineación del texto en .texto */
+  margin-top: 15px; /* Margen superior del texto */
+}
+
+.proyecto h1,
+.proyecto h2 {
+  font-family: "like"; /* Fuente para títulos dentro de Proyecto */
+  font-size: 1.5rem; /* Tamaño de fuente para títulos */
+}
+
+.proyecto p {
+  font-size: 1.2rem; /* Tamaño de fuente para párrafos */
+  font-family: 'Titillium Web', sans-serif; /* Fuente para párrafos */
+}
+
+/* Estilos del contenedor de elementos dentro del proyecto */
+.elemento-container {
+  display: flex; /* Establece el contenedor como flexible */
+  flex-direction: column; /* Organiza los elementos en columnas */
+  align-items: center; /* Alinea los elementos en el centro */
+  text-align: center; /* Alineación del texto en el contenedor */
+}
+
+.elemento-container img {
+  width: 100%; /* Ancho del elemento de imagen al 100% del contenedor */
+}
+
+.elemento-container strong {
+  font-size: 1.5em; /* Tamaño de fuente para elementos fuertes */
+}
+
+.elemento-container p {
+  margin: 5px 0; /* Margen superior e inferior del párrafo dentro del contenedor */
+}
+
+/* Estilos de la sección de Contacto */
+.Contacto {
+  width: 80%; /* Ancho del contenedor de Contacto */
+  margin: 2% auto; /* Margen superior e inferior del contenedor */
+  padding: 5%; /* Relleno interno del contenedor */
+  color: #ccf381; /* Color del texto */
+  border-radius: 15px; /* Borde redondeado del contenedor */
+  text-align: center; /* Alineación del texto */
+  background: #333; /* Color de fondo del contenedor */
+}
+
+.formulario {
+  box-sizing: border-box; /* Incluye padding en el ancho del formulario */
+  display: flex; /* Establece el formulario como flexible */
+  flex-direction: row; /* Organiza los elementos en filas */
+  align-items: center; /* Alinea los elementos en el centro */
+  justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
+  text-align: center; /* Alineación del texto en el formulario */
+  background-color: #ccf381; /* Color de fondo del formulario */
+}
+
+.formulario2 {
+  display: flex; /* Establece el formulario como flexible */
+  flex-direction: column; /* Organiza los elementos en columnas */
+  align-items: center; /* Alinea los elementos en el centro */
+  justify-content: space-evenly; /* Distribuye el espacio de manera uniforme entre los elementos */
+  background-color: #ccf381; /* Color de fondo del formulario */
+  margin-bottom: 1.5rem; /* Distancia al margenb inferior */
+}
+
+.formulario p {
+  font-size: 1.2rem; /* Tamaño de fuente para párrafos en el formulario */
+  font-family: 'Titillium Web', sans-serif; /* Fuente para párrafos en el formulario */
+  color: #333; /* Color del texto en el formulario */
+}
+
+.formulario2 p {
+  font-size: 1.2rem; /* Tamaño de fuente para párrafos en el formulario2 */
+  font-family: 'Titillium Web', sans-serif; /* Fuente para párrafos en el formulario2 */
+  color: #333; /* Color del texto en el formulario2 */
+}
+
+.formulario input {
+  margin: 30px; /* Margen exterior del input */
+  width: 30%; /* Ancho del input al 30% del contenedor */
+  height: 35px; /* Altura del input */
+  margin-bottom: 10px; /* Margen inferior del input */
+  background-color:#333 ;
+  color: white;
+  border:none;
+  color: #ccf381;
+   margin-bottom: 1.5rem; /* Distancia al margenb inferior */
+}
+
+.formulario .boton {
+  width: 10%; /* Ancho del botón al 10% del contenedor */
+  height: 10%; /* Altura del botón al 10% del contenedor */
+  background-color: #ffffff; /* Color de fondo del botón */
+  color: #333; /* Color del texto del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border: none;
+}
+/* Indicación para el usuario  */
+.formulario .boton:hover{ 
+  color: #ccf381; /* Reajusta el color de letra*/
+  background-color: #333; /* Reajusta el color de fondo */
+}
+
+/* Configuracion del text area */
+
+.formStyle {
+  color: #ccf381; /* Color del texto */
+  background: #333;
+  width: 60rem;/* Ancho del botón al 10% del contenedor */
+  height: 15rem;/* Altura del botón al 10% del contenedor */
+  margin-bottom: 1.5rem; /* Distancia al margenb inferior */
+  display: block; /* Como se situa */
+  border: none; /* Tipo de borde */
+  resize: none; /* Bloquea el reajuste de tamaño */
+
+}
+/* Media query para pantallas pequeñas (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .proyecto-container {
+    flex-direction: column; /* Cambia la dirección del contenedor en pantallas pequeñas */
+  }
+}

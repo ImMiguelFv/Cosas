@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="Css/Bustos/bustos.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <!-- Librerias y fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin ></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+          <h1 class="header-logo">MiguelFV Dev</h1>
+          <button class="header-btn"> <img src="images/menu.svg" alt=""></button>
+        </div>
+        <nav  class="header-menu">
+          <ul>
+            <li><a href="#">Sobre Mi</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="Zona">
+    <div class="viewer-container">
+        <model-viewer 
+            src="Recursos/modelo.glb" 
+            ar 
+            ar-modes="webxr scene-viewer quick-look" 
+            camera-controls 
+            
+            poster="poster.webp" 
+            shadow-intensity="0"
+            ></model-viewer>
+        
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer">
+      <h1 class="footer-logo">Sobre Mi MiguelFV Dev </h1>
+      <div class="AboutMe" id="AboutMe">
+        <div class="texto">
+            <p>¡Hola! Soy Miguel Ángel Ferrón Viñuela, soy un estudiante de Desarollo de aplicaciones web en el IES Virgen de la Paloma en Madrid.
+                 Aquí mostraré proyectos que participe o yo mismo cree.</p>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>

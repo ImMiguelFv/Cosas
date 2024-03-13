@@ -1,0 +1,32 @@
+.viewer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Estilos para el visor de modelos */
+model-viewer {
+    width: 800px;
+    height: 500px;
+    background-color: #000;
+}
+
+/* Body */
+
+/*Zona */
+.Zona {
+   padding-top: 5%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    width: auto; /* El ancho que desees */
+    text-align: center; /* Para centrar el contenido dentro del section */
+    padding-bottom: 4%;
+}
+
+
+
+
+.Zona h1{
+    color: #ffffff;
+}

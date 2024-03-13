@@ -1,0 +1,188 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4b1c1c;
+}
+
+/* Estilos del header */
+.header {
+    background-image: url('header-background.jpg'); /* Reemplaza con la imagen de tu elección */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 5px 0;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-title {
+    font-size: 36px;
+}
+
+.header-nav {
+    margin-top: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: #4b1c1c; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos del carrusel */
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-width: 200%;
+    
+    transform: scale(0.95); /* Ajusta este valor según tus preferencias */
+}
+
+.carousel-slide {
+    height: 600px;
+    transition: transform 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+/* Aplica un aumento de escala a las imágenes cuando se pasa el cursor sobre ellas */
+.carousel-slide img:hover {
+    transform: scale(1.1); /* Aumenta la escala en un 10% (puedes ajustar este valor) */
+    transition: transform 0.3s; /* Agrega una transición suave para suavizar el efecto */
+}
+.carousel-slide img {
+    height: 100%;
+    width: auto;
+}
+
+/* Botones de navegación del carrusel */
+.carousel-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Posicionamiento absoluto para los botones */
+    top: 55%; /* Centra verticalmente respecto al contenedor */
+    transform: translateY(50%); /* Alinea verticalmente */
+    font-size: 24px; /* Tamaño de la fuente de la flecha */
+    user-select: none; /* Evita que el texto se seleccione */
+}
+
+.carousel-button:hover {
+    background-color: #923f3f;
+}
+
+#prevBtn {
+    left: 0; /* Alinea a la izquierda */
+}
+
+#nextBtn {
+    right: 0; /* Alinea a la derecha */
+}
+
+/* Estilos de secciones */
+section {
+    padding: 1px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos del footer de contacto */
+.footer-contacto {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Reduce el espacio vertical */
+    position: relative;
+    bottom: 0; /* Lo posiciona al final de la página */
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-contacto h3 {
+    margin-bottom: 5px; /* Reduce el margen inferior */
+    font-size: 18px; /* Reduce el tamaño de fuente */
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 5px 0;
+}
+
+.contact-info strong {
+    font-weight: bold;
+}
+
+/* Estilos de los puntos indicadores */
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #883a3a;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #1a0909; /* Color para el punto activo */
+}

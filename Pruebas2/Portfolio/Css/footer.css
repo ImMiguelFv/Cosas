@@ -1,0 +1,45 @@
+.footer {
+    background: #333;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    font-family: "like";
+    color: #ccf381 ;
+    text-align: center;
+    
+  }
+    
+  .AboutMe {
+    max-width: 40%;
+    max-height: 100%; /* Cambiado a 100% para ocupar el espacio disponible */
+    margin: 2% auto;
+    color: #ccf381;
+    border-radius: 15px;
+    text-align: center;
+    background: #333;
+    width: auto;
+  }
+  
+.SobreMi{
+    max-width: 40%;
+    margin: 2% auto;
+    padding: 5%;
+    color: #ccf381;
+    border-radius: 15px;
+    font-family: "like"
+
+}
+.texto{
+    font-family: 'Titillium Web', sans-serif;
+
+}

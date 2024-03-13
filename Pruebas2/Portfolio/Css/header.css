@@ -1,0 +1,109 @@
+
+@font-face {
+  font-family: "logo";
+  src: url(/Fonts/Platinum_Logo/Platinum\ Sign\ Over.ttf);
+}@font-face {
+  font-family: "like";
+  src: url(/Fonts/widges/Widges-Demo.ttf);
+}
+@font-face {
+  font-family: "xeno";
+  src: url(/Fonts/Xeno/Xenogears_font.ttf);
+}
+.header {
+  background: #333;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 1.75rem;
+  margin-left: 2rem;
+  font-family: "like";
+  color: #ccf381 ;
+  text-align: center;
+  
+}
+.header-logo:hover{ 
+  cursor: pointer;
+  
+}
+.header-btn {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #ccf381;
+  border: none;
+}
+
+.header-menu {
+  display: none;
+  padding-bottom: 10px;
+  animation: header_menu_active 2s;
+}
+
+@keyframes header_menu_active {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.header-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 20px;
+  margin-right:  3rem;
+  font-size: 1rem;
+}
+.header-menu a:hover{ 
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.header-menu a {
+  color: #ccf381 ;
+  text-decoration: none;
+  font-family: "like";
+}
+
+/* estilos.css */
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-top  {
+    padding-bottom: 0;
+  }
+
+  .header-menu {
+    padding-top: 0;
+    display: block !important;
+  }
+
+  .header-menu ul {
+    flex-direction: row;
+  }
+
+  .header-btn {
+    display: none;
+  }
+}

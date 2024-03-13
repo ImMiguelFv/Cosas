@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.person {
+    width: 100px;
+    height: 200px;
+    position: relative;
+}
+
+.legs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    animation: walk 1s infinite alternate;
+}
+
+.leg {
+    width: 20px;
+    height: 100px;
+    background-color: #333;
+    display: inline-block;
+    margin: 0 10px;
+    transform-origin: bottom;
+}
+
+.left-leg {
+    transform: rotate(10deg);
+    animation: left-leg-move 0,5s infinite alternate;
+}
+
+.right-leg {
+    transform: rotate(-10deg);
+    animation: right-leg-move 0,5s infinite alternate;
+}
+
+@keyframes walk {
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes left-leg-move {
+    to {
+        transform: rotate(0deg) translateY(-20px);
+    }
+}
+
+@keyframes right-leg-move {
+    to {
+        transform: rotate(0deg) translateY(-20px);
+    }
+}

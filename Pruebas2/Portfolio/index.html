@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!-- Estilos -->
+        <link rel='stylesheet' type='text/css' media='screen' href='Css/main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='Css/header.css'>
+        <link rel="stylesheet" href="Css/footer.css">
+    <!-- Librerias y fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin ></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin ></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="JavaScript/menu.js" defer></script>
+
+    </head>
+        <body>
+            <header class="header">
+                <div class="header-top">
+                <h1 class="header-logo">MiguelFV Dev</h1>
+                <button class="header-btn"> <img src="images/menu.svg" alt=""></button>
+                </div>
+                <nav  class="header-menu">
+                <ul>
+                    <li><a href="#Proyectos">Mis Proyectos</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                    <li><a href="#footer">Sobre Mi</a></li>
+                </ul>
+                </nav>
+            </header>
+                <div class="Proyectos" id="Proyectos">
+                <h1>Links a mis proyectos</h1>
+                <br>
+                <p>Aquí mostraré proyectos principalmente los recientes o destacados</p> <br> <br>
+                <br>
+                <h2>Proyectos recientes y destacados.</h2>
+                <br>
+                <div id="app">
+                </div>
+                </div>
+                <div class="Contacto" id="Contacto">
+                <h1>Formas de Contacto</h1>
+                <div class = "formulario">
+                <input type=" text"name="Nombre y apellidos" placeholder="Nombre y apellidos" id="NyP">
+                </div>
+                <div class = "formulario">
+                <input type=" text"name="Correo Electrônico" placeholder="Correo Electrónico" id="CE">
+                </div>
+                <div class = "formulario">
+                <input type="text" name="Asunto" id="Asunto" placeholder="Escriba asunto del correo"> </div>
+                <div class = "formulario">
+                <div class = "formulario2">
+                <p>Escriba su correo</p>
+                <textarea name="msg" class="formStyle" placeholder="" required=""></textarea>
+                </div>
+                </div>
+                <div class = "formulario">
+                <input type="button" class=" boton" value="Enviar">
+                </div>
+                </div>
+                <footer class="footer" id="footer">
+                <div class="footer">
+                    <h1 class="footer-logo">Sobre Mi MiguelFV Dev </h1>
+                    <div class="AboutMe" id="AboutMe">
+                    <div class="texto">
+                        <p> ¡Hola! Soy Miguel Ángel Ferrón Viñuela,
+                            soy un estudiante de Desarollo de aplicaciones web en el IES Virgen de la Paloma en Madrid.
+                            Aquí mostraré proyectos que participe o yo mismo cree.</p>
+                    </div>
+                </div>
+                </footer>
+                <script src="contenido.js" type="text/babel" ></script>
+        
+    </body>
+</html>
